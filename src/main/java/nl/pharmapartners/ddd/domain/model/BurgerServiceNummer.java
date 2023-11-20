@@ -6,10 +6,10 @@ import lombok.Data;
 //TODO 2: add the proper annotation from the annotations package here
 public class BurgerServiceNummer {
     
-    private long burgerServiceNummer;
+    private String burgerServiceNummer;
     public BurgerServiceNummer(String burgerServiceNummer) {
         validateInput(burgerServiceNummer);
-        this.burgerServiceNummer = Long.parseLong(burgerServiceNummer);
+        this.burgerServiceNummer = burgerServiceNummer;
     }
 
     private void validateInput(String burgerServiceNummer) {
